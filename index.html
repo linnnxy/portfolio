@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Space</title>
+    <link rel="icon" href="imagens/gato-dormindo.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="stars"></canvas>
+
+    <header>
+      <div class="logo"><i class="fa-solid fa-cat">Bianca Silveira</i></div>
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">SOBRE</a></li>
+          <li><a href="#skills">HABILIDADES</a></li>
+          <li><a href="#projects">PROJETOS</a></li>
+          <li><a href="#contact">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="home-text">
+          <h1>Olá, me chamo Bianca e sou uma <span>Desenvolvedora</span></h1>
+          <h2 id="animated-text"></h2>
+          <h2>Transformando ideias em software com foco no usuário</h2>
+          <div class="buttons">
+            <a href="#contact" class="btn btn-primary">Contato</a>
+            <a
+              href="https://docs.google.com/document/d/e/2PACX-1vQtXQQmAkaTf_v7kK527RwDYNCWnJbuxyqx9v5bpspQ12eDarAobr6-AcFKHQ1oqQBN6KNSDbdKI6G2/pub"
+              target="_blank"
+              class="btn btn-secondary"
+              >Baixar CV</a
+            >
+          </div>
+        </div>
+        <div class="profile-pic">
+          <img src="../imagens/hero-image.png" alt="Bianca Sousa" />
+        </div>
+      </section>
+
+      <section id="about" data-parallax-speed="0.2">
+        <h1 class="section-title">SOBRE MIM</h1>
+        <div class="about-content">
+          <p class="about-text">
+            Olá! Me chamo Bianca e sou uma desenvolvedora em início de carreira,
+            com foco em desenvolvimento web. Tenho grande interesse em construir
+            interfaces que combinem design e funcionalidade, buscando sempre
+            soluções que proporcionem uma experiência de usuário fluida e
+            agradável. Estou sempre em busca de novos conhecimentos e desafios
+            para aprimorar minhas habilidades e entregar projetos de alta
+            qualidade.
+          </p>
+          <img
+            src="imagens/about-image-removebg-preview.png"
+            alt="Pczinho"
+            class="about-gif"
+          />
+        </div>
+      </section>
+
+      <section id="skills" data-parallax-speed="0.3">
+        <h1 class="section-title">MINHAS HABILIDADES</h1>
+        <div class="skills-container">
+          <i class="fa-brands fa- skill-icon icon-js" title="JavaScript">JS</i>
+          <i
+            class="fa-brands fa-square-ts skill-icon icon-ts"
+            title="TypeScript"
+          >TS</i>
+          <i
+            class="fa-brands fa-angular skill-icon icon-angular"
+            title="Angular"
+          ></i>
+          <i class="fa-brands fa-java skill-icon icon-java" title="Java"></i>
+          <i
+            class="fa-solid fa-leaf skill-icon icon-spring"
+            title="Spring Boot"
+          ></i>
+          <i
+            class="fa-solid fa-database skill-icon icon-mysql"
+            title="MySQL"
+          ></i>
+          <i class="fa-brands fa-sass skill-icon icon-sass" title="Sass"></i>
+          <i class="fa-brands fa-git-alt skill-icon icon-git" title="Git"></i>
+          <i
+            class="fa-brands fa-docker skill-icon icon-docker"
+            title="Docker"
+          ></i>
+        </div>
+      </section>
+
+      <section id="projects" data-parallax-speed="0.15">
+        <h1 class="section-title">MEUS PROJETOS</h1>
+        <div class="projects-container">
+          <div class="polaroid-card">
+            <img src="../imagens/projetos/projeto2.png" alt="Projeto Coffee" />
+            <div class="polaroid-caption">
+              <h2>Coffee</h2>
+              <p>Site de cafeteria com design intuitivo e blends incríveis.</p>
+              <a
+                href="https://coffee1-puce.vercel.app/"
+                target="_blank"
+                class="btn-project"
+                >Ver Projeto</a
+              >
+            </div>
+          </div>
+          <div class="polaroid-card">
+            <img
+              src="../imagens/projetos/projeto1.png"
+              alt="Projeto Gerador de Senha"
+            />
+            <div class="polaroid-caption">
+              <h2>Gerador de Senha</h2>
+              <p>Gere senhas seguras e aleatórias para proteger suas contas.</p>
+              <a
+                href="https://gerador-de-senha-black.vercel.app/"
+                target="_blank"
+                class="btn-project"
+                >Ver Projeto</a
+              >
+            </div>
+          </div>
+          <div class="polaroid-card">
+            <img
+              src="../imagens/projetos/3.png"
+              alt="Projeto Jogo da Memória"
+            />
+            <div class="polaroid-caption">
+              <h2>Jogo da Memória</h2>
+              <p>Encontre pares com um design envolvente e animações suaves.</p>
+              <a
+                href="https://jogo-da-memoria-pi-smoky.vercel.app/"
+                target="_blank"
+                class="btn-project"
+                >Ver Projeto</a
+              >
+            </div>
+          </div>
+          <!-- <div class="polaroid-card">
+            <img src="add aqui" alt="add aqui" />
+            <div class="polaroid-caption">
+              <h2></h2>
+              <p>descrição</p>
+              <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+            </div>
+          </div>
+          <div class="polaroid-card">
+            <img src="add aqui" alt="add aqui" />
+            <div class="polaroid-caption">
+              <h2></h2>
+              <p>descrição</p>
+              <a href="#" target="_blank" class="btn-project">Ver Projeto</a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" data-parallax-speed="0.25">
+        <h1 class="section-title">CONTATO</h1>
+        <div class="contact-container">
+          <div class="contact-item">
+            <i class="fa-regular fa-envelope contact-icon"></i>
+            <a href="mailto:biancasgsilveira@gmail.com"
+              >biancasgsilveira@gmail.com</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin-in contact-icon"></i>
+            <a href="https://www.linkedin.com/in/biancasg/" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-instagram contact-icon"></i>
+            <a href="https://www.instagram.com/bibizy0/" target="_blank"
+              >Instagram</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-github-alt contact-icon"></i>
+            <a href="https://github.com/BiancaSilveira" target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Bianca Silveira - Todos os direitos reservados.</p>
+      <p>Se você pode sonhá-lo, você pode fazê-lo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
